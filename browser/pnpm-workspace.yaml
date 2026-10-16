@@ -1,0 +1,10 @@
+allowBuilds:
+  cbor-extract: true
+  esbuild: true
+minimumReleaseAgeExclude:
+  - "@inkandswitch/*"
+  - "@automerge/*"
+# As Patchwork's own sites: one automerge for every package, so the wasm the site
+# serves matches the JS glue.
+overrides:
+  "@automerge/automerge": 3.4.1

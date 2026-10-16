@@ -1,0 +1,9 @@
+# Patchwork's own patch of automerge-repo (patchwork-system patches/, as shipped in
+# @inkandswitch/patchwork 0.8.4): among other things, it makes a Subduction
+# source's `detach` unsubscribe the document's ephemeral topic.
+patchedDependencies:
+  "@automerge/automerge-repo@2.6.0-subduction.48": patches/@automerge__automerge-repo@2.6.0-subduction.48.patch
+minimumReleaseAgeExclude:
+  - "@automerge/*"
+allowBuilds:
+  cbor-extract: true

@@ -1,0 +1,18 @@
+{
+  "name": "presence-repro-browser",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build site",
+    "repro": "vite build site && node repro.ts"
+  },
+  "dependencies": {
+    "@inkandswitch/patchwork": "0.8.4",
+    "@inkandswitch/patchwork-pkg-base": "0.0.72"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "@types/node": "24.19.2",
+    "vite": "8.3.4"
+  }
+}
